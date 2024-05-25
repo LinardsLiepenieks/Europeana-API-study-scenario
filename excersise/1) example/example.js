@@ -7,7 +7,7 @@
 //1. Start by jumping off the previous exercise and asking "What should the computer know?"
 //in this case it needs to know which user will be accessing the information and where will the weather
 //information be collected from
-const appid = "3f930b0b0b70a648a6e7c7e71bad0cca"; //put your api key here
+const appid = ""; //put your api key here
 let city = "Riga";
 
 //2. explain about query parameters and the best practice on how to add the variables
