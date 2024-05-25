@@ -1,0 +1,112 @@
+:root {
+	--color-main: #094d92;
+	--color-secondary: #e7ecef;
+	--accent: #eec43a;
+
+	--fs-h1: 5.61rem;
+	--fs-h2: 4.209rem;
+	--fs-h3: 3.157rem;
+	--fs-h4: 2.369rem;
+	--fs-h5: 1.777rem;
+	--fs-h6: 1.333rem;
+	--fs-p: 1rem;
+	--fs-small: 0.75rem;
+}
+
+body {
+	margin: 0;
+	color: var(--color-secondary);
+	background-color: var(--color-main);
+	font-size: var(--fs-p);
+}
+
+h1 {
+	font-size: var(--fs-h1);
+}
+.container {
+	max-width: 500px;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+}
+
+.input-lg {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	font-size: var(--fs-h4);
+	border-radius: 8px;
+	padding: 16px 12px;
+	background-color: var(--color-main);
+	border: 2px solid var(--color-secondary);
+	color: var(--color-secondary);
+	margin: 8px 0;
+}
+.attribute-row {
+	width: 100%;
+	display: flex;
+	margin: 8px 0;
+}
+
+.attribute-row > * {
+	flex-grow: 1;
+	padding: 8px 8px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 10px;
+	background-color: var(--color-main);
+	border: 2px solid var(--color-secondary);
+	color: var(--color-secondary);
+	border-radius: 8px;
+	font-size: var(--fs-h6);
+}
+
+.attribute-row > *:last-child {
+	margin-right: 0;
+}
+
+.submit {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	font-size: var(--fs-h5);
+	border-radius: 8px;
+	padding: 12px 8px;
+	background-color: var(--color-main);
+	border: 2px solid var(--color-secondary);
+	color: var(--color-secondary);
+	margin: 16px 0;
+	transition: 0.4s ease all;
+}
+
+.submit:hover {
+	cursor: pointer;
+	background-color: var(--color-secondary);
+	color: var(--color-main);
+}
+
+.results-title {
+	font-size: var(--fs-h2);
+	text-align: left;
+	margin: 0.4em 0;
+}
+.results ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.result-item {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	width: 100%;
+	border: 2px solid var(--color-secondary);
+	box-sizing: border-box;
+	padding: 0px 16px;
+	border-radius: 8px;
+	margin: 8px 0;
+}
+.result-item a {
+	color: white;
+}

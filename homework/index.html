@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<!-- API key input group -->
+		<div id="apiInputGroup">
+			<h5>INPUT YOUR API KEY TO TEST THE WEBSITE!!!</h5>
+			<input type="text" id="apiInput" />
+			<button id="submitKey">Apply key</button>
+		</div>
+
+		<!-- Main container -->
+		<div class="container">
+			<div>
+				<h1>Search me!</h1>
+			</div>
+
+			<!-- Search form -->
+			<form class="input-group" id="myForm">
+				<div>
+					<input class="input-lg" id="query" type="text" />
+				</div>
+				<div class="attribute-row">
+					<select id="theme" name="theme">
+						<option value="archaeology">Archaeology</option>
+						<option value="art">Art</option>
+						<option value="fashion">Fashion</option>
+						<option value="industrial">Industrial</option>
+						<option value="manuscript">Manuscript</option>
+						<option value="map">Map</option>
+						<option value="migration">Migration</option>
+						<option value="music">Music</option>
+						<option value="nature">Nature</option>
+						<option value="newspaper">Newspaper</option>
+						<option value="photography">Photography</option>
+						<option value="sport">Sport</option>
+						<option value="ww1">World War 1</option>
+					</select>
+					<input
+						type="number"
+						id="rows"
+						name="rows"
+						min="1"
+						max="10"
+						step="1" />
+				</div>
+
+				<input type="submit" class="submit" value="Search" />
+			</form>
+
+			<!-- Results display -->
+			<div class="results" id="results">
+				<h2 class="results-title">Results:</h2>
+				<ul id="resultsList"></ul>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
